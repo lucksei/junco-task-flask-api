@@ -1,11 +1,11 @@
 from flask import Flask, request, jsonify
+import os
 # from flask_cors import CORS
 
 app = Flask(__name__)
 
-# not safe, move this to env variable in production
-# tareita:firulais
-API_KEY = "dGFyZWl0YTpmaXJ1bGFpcw=="
+# Access an environment variable
+API_KEY = os.environ.get("API_KEY")
 
 
 @app.route("/ping", methods=["GET"])

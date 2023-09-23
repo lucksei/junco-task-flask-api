@@ -1,6 +1,7 @@
 blenderbotTest.py
 oneLineBlenderBot.py
 helloworld.py
+secrets.txt
 __pycache__
 .env
 .vscode
